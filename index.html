@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&family=Cairo+Play:wght@200;300;400;700&family=Cairo:wght@300;600&family=Harmattan:wght@400;500;600&family=Kufam:ital,wght@0,400;0,500;1,400&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+
+      background-color: rgb(30, 0, 77);
+    }
+
+    .taskTable {
+      background-color: rgba(126, 42, 165, 0.459);
+      width: 60%;
+      height: 100%;
+      margin-top: 50px;
+     
+    }
+    @media ( max-width: 900px) {
+      .taskTable{
+        width: 100%;
+      }
+      h2{
+        font-size: 20px;
+      }
+     .task{
+      display: flex;
+     }
+ .pp{
+  gap: 5px;
+  margin: 0 0 0 20px;
+ }
+    }
+    .circular {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      box-shadow: 0 3px 5px black;
+      cursor: pointer;
+    }
+
+    .task {
+      display: flex;
+      background-color: rgb(141, 139, 136);
+      padding: 5px;
+      border-bottom: solid black 1px;
+      transition: 0.5s;
+      color: aliceblue;
+      margin: 5px 0;
+
+    }
+    .done{
+      background-color: rgb(70, 211, 42);
+    }
+
+    .tasks {
+      padding: 20px;
+    }
+
+    .task:hover {
+      box-shadow: 0 3px 15px beige;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <div dir="rtl">
+      <div style="display: flex; justify-content: center; align-items: center">
+        <!--task table-->
+        <div class="taskTable">
+          <!--Header-->
+          <div style="
+              width: 100%;
+              text-align: center;
+              background-color: blueviolet;
+              color: beige;
+              padding-top: 8px;
+              padding-bottom: 8px;
+            ">
+           
+            <h1 style="display: inline-block">مهامي</h1>
+           
+            <button class="circular" style="
+                float: right;
+                background-color: rgb(255, 255, 255);
+                margin: 0 10px;
+              ">
+              <span id="add" class="material-symbols-outlined ">
+                add
+              </span>
+            </button>
+          </div>
+          <!--tasks-->
+          <div class="tasks">
+            <!--task-->
+            <div class="task">
+              <div style="width: 70%;">
+                <h2>قراءة كتاب</h2>
+                <div>
+                  <span class="material-symbols-outlined">
+                    calendar_month
+                  </span>
+                  <span>10/10/2222</span>
+                </div>
+              </div>
+              <!--iiiiiiiiiiiiiiii-->
+              <div
+                style="display: flex; justify-content: space-between;align-items: center; width: 20%;" class="pp">
+                <button class="circular" style="background-color: brown;"><span
+                    class="material-symbols-outlined">
+                    delete
+                  </span></button>
+                <button class="circular" style="background-color: green;"><span
+                    class="material-symbols-outlined">
+                    done_outline
+                  </span></button>
+                <button class="circular" style="background-color: blue;"><span
+                    class="material-symbols-outlined">
+                    edit
+                  </span></button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+    <script src="./index.js">
+
+  </script>
+  </body>
+
+</html>
